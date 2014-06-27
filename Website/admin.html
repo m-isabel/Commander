@@ -40,23 +40,23 @@
 				  .button a {color: #ffffff; text-decoration: none;}
 				  .borderbottom {border-bottom: 1px solid #f2eeed;}
 				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
+		.warning {
+			font-size: 3em;
+			text-align: center;
+			height:500px;
+			padding-top:80px;
+			overflow:hidden;
+			display:none;
+		}
+		.content {
+			display:none;
+		}
 	
 	</style>
-	<script>
-	function done() { 
-	    document.getElementById("popup").style.display = "none";
-	    var password = document.getElementById("pass").value;
-    
-	    //DO STUFF WITH PASSWORD HERE    
-	};
-
-	function showPopup() {
-	     document.getElementById("popup").style.display = "block";
-	}
-	</script>
+	
 	<title>ISC Corporate Challenge | HOME
 	</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/eric_style.css" rel="stylesheet" type="text/css">
 	
 </head>
 <body>
@@ -75,16 +75,31 @@
 	<br>
 	<br>
 	<br>
-	<div id="popup" align="center">
-	    <div align="center">Enter Password:</div>
-	    <input id="pass" type="password"/>
-	    <button onclick="done()">Done</button>    
+	<div class="container">
+		<div class="warning">
+			<p><strong>Wrong password !<br /><br /><br />
+			You are not allowed to see this page!</strong></p>
+		</div>
+		<div class="content">
+			Content show now
+		</div>
 	</div>
-	<div align="center">
-	<button onclick="showPopup()">Click to enter</button>
+
 </div>
-	
-	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+<script>
+	window.onload = function(){
+		var pwd = prompt("Please enter password");
+		if(pwd != '123')
+		{
+			$('.warning').show();
+		}
+		else
+		{
+			$('.content').show();
+		}
+	}
+</script>	
 	
 
 										
