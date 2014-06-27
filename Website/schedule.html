@@ -62,11 +62,20 @@
 	body hr {
 		margin-top:20px;
 		margin-bottom:20px;
+		color: #eee;
+		background: #eee;
+		border:none;
+		height:4px;
+	}
+	#pdf-view {
+		padding:20px;
+		margin:0 auto;
+		width:55%;
+
 	}
 	</style>
 	<title>ISC Corporate Challenge | HOME
 	</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
 	
 	
 </head>
@@ -91,15 +100,15 @@
 			<span id="uploadLabel">Upload Schedule (PDF)</span>
 		</div>
 		<br />
-		<div class="pdf-view">
+		<div id="pdf-view">
 			
 		</div>
 	</div>
-	<script type="text/javascript" src="./pdfobject.js"></script>
+	<script type="text/javascript" src="js/pdfobject.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		window.onload = function() {
-			var success = new PDFObject({ url: "ex.pdf"}).embed("pdf-view");
+			var success = new PDFObject({ url: "data/ex.pdf"}).embed("pdf-view");
 		};
 	</script>
 	
