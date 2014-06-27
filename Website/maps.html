@@ -37,31 +37,64 @@
 	<script>
 	$(document).ready(function(){
 	 var map = new GMaps({
-		div: '#basic_map',
-		lat: -12.043333,
-		lng: -77.028333,
+		div: '#basic_map', 
+		lat: 39.883507,
+		lng: -86.232060,
 		zoomControl : true,
 		zoomControlOpt: {
 			style : 'SMALL',
 		},
 		panControl : false,
 	  });
-	  
-	  GMaps.geolocate({
-  success: function(position) {
-    map.setCenter(position.coords.latitude, position.coords.longitude);
-  },
-  error: function(error) {
-    alert('Geolocation failed: '+error.message);
-  },
-  not_supported: function() {
-    alert("Your browser does not support geolocation");
-  },
-  always: function() {
-    alert("Done!");
-  }
-});
-//	  map.fitZoom();
+	GMaps.geolocate({
+    success: function(position){
+      map.setCenter(position.coords.latitude, position.coords.longitude);
+
+      map.addMarker({
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+        title: 'You are here.',
+        infoWindow: {
+          content: '<p>You are here!</p>'
+        }
+      });
+    },
+	/*
+    error: function(error){
+      alert('Geolocation failed: '+error.message);
+    },
+    not_supported: function(){
+      alert("Your browser does not support geolocation");
+    }
+	*/
+  });
+  
+	map.addMarker({
+		lat: 39.794940, 
+		lng:-86.235685,
+		title: 'Parking.',
+        infoWindow: {
+          content: '<p>No more parking!</p>'
+        }
+	});
+		map.addMarker({
+		lat:39.800117, 
+		lng:-86.240148,
+		title: 'Parking.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});
+		map.addMarker({
+		lat: 39.788246, 
+		lng:-86.240320,
+		title: 'Parking.',
+        infoWindow: {
+          content: '<p>No more parking!</p>'
+        }
+	});
+	
+	map.fitZoom();
 	});
 	</script>
 	<title>ISC Corporate Challenge | HOME
@@ -81,7 +114,7 @@
 		</ul>
 	</div>
 	<div id="basic_map" style="height: 300px; width: 100%"></div>
-	<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
 
 </body>
 </html>
