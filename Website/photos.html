@@ -42,10 +42,36 @@
 				margin: 10px;
 			}
 			.instagramWidget{
-
+				padding-left: 7px;
 			}
 
 	</style>
+	<script type="text/javascript">
+	var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+	};
+
+	if (isMobile.any()) {
+    	$('.instagramLink').attr('href', 'instagram://');
+	}
+	</script>
 	<title>ISC Corporate Challenge | HOME
 	</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
@@ -70,7 +96,9 @@
 		<iframe class="instagramWidget" src="http://snapwidget.com/in/?h=aW5keXNwb3J0c3xpbnwxMjV8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=27614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:390px; height:390px"></iframe>
 	</div>
 
-	<a href="instagram://media?id=434784289393782000_15903882">instagram://media?id=434784289393782000_15903882</a>
+	<div class="instagramUpload">
+		<p class="linkToInstagram">Share your photos from the event on <a class="instagramLink" href="http://instagram.com">Instagram</a> using #indysports!</p>
+	</div>
 
 										
 										
