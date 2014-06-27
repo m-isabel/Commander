@@ -34,13 +34,41 @@
 				  .borderbottom {border-bottom: 1px solid #f2eeed;}
 				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
 	</style>
+	<script>
+	$(document).ready(function(){
+	 var map = new GMaps({
+		div: '#basic_map',
+		lat: -12.043333,
+		lng: -77.028333,
+		zoomControl : true,
+		zoomControlOpt: {
+			style : 'SMALL',
+		},
+		panControl : false,
+	  });
+	  
+	  GMaps.geolocate({
+  success: function(position) {
+    map.setCenter(position.coords.latitude, position.coords.longitude);
+  },
+  error: function(error) {
+    alert('Geolocation failed: '+error.message);
+  },
+  not_supported: function() {
+    alert("Your browser does not support geolocation");
+  },
+  always: function() {
+    alert("Done!");
+  }
+});
+//	  map.fitZoom();
+	});
+	</script>
 	<title>ISC Corporate Challenge | HOME
 	</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	
 </head>
 <body>
-	
 	<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -52,27 +80,8 @@
 			<li><a href="admin.html">Admin</a></li>
 		</ul>
 	</div>
-	<div id="basic_map"></div>
-	<script>
-	$(document).ready(function(){
-	 var map = new GMaps({
-		el: '#basic_map',
-		lat: 51.5073346,
-		lng: -0.1276831,
-		zoom: 12,
-		zoomControl : true,
-		zoomControlOpt: {
-			style : 'SMALL',
-		},
-		panControl : false,
-	  });
-	  map.fitZoom();
-	});
-	</script>
-	
-	
+	<div id="basic_map" style="height: 300px; width: 100%"></div>
+	<button type="button" onclick="alert('Hello world!')">Click Me!</button>
 
-										
-										
 </body>
 </html>
