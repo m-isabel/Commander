@@ -209,6 +209,15 @@
 
 			}
 
+			@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+				.instagramPhotos{
+					display: none;
+				}
+				.iphone{
+					display: inline-block !important;
+				}
+			}
+
 			/* ipad landscape */
 			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) { 
 				body {
@@ -353,6 +362,7 @@
 			<div class="instagramEmbed">
 				<p class="PageTitle"> Today's event photos: #indysports</p> 
 				<iframe class="instagramPhotos" src="http://snapwidget.com/in/?h=aW5keXNwb3J0c3xpbnwxMjV8M3w0fHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=27614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="overflow:hidden; width:400px; height:510px"></iframe>
+				<iframe class="instagramPhotos iphone" src="http://snapwidget.com/in/?h=aW5keXNwb3J0c3xpbnwxMjV8Mnw0fHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=28614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:260px; height:520px; display:none"></iframe>
 				<p class="linkToInstagram" style="margin-bottom:20px">
 				Use #indysport on 
 				<a class="instagramLink" style="text-decoration:none" href="http://instagram.com">Instagram</a> to share photos!
