@@ -71,6 +71,24 @@
 				display: inline-block;
 				margin: 0 auto;
 			}
+			#backgroundLeft{
+				background-color: #B8B8B8 ;
+  				position: fixed;
+  				top: 0;
+  				bottom: 0;
+  				left: 0;
+  				right: 1300px;
+ 				z-index: -1;
+			}
+			#backgroundRight{
+				background-color: #B8B8B8 ;
+  				position: fixed;
+  				top: 0;
+  				bottom: 0;
+  				left: 1300px;
+  				right: 0;
+ 				z-index: -1;
+			}
 
 	</style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -80,7 +98,8 @@
 	
 </head>
 <body>
-	
+	<div id="backgroundLeft"></div>
+	<div id="backgroundRight"></div>
 	<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
 		<ul>
 			<li><a href="index.html">Home</a></li>
