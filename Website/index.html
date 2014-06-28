@@ -8,17 +8,17 @@
 	ul{list-style-type:none;}
 	
 	/*border change*/
-	#topPan{width:1000px; height:96px; position:relative; margin:0 auto; padding:0 0 2px; border-bottom: solid;}
-	#topPan img{width:204px; height:57px; display:block; padding:23px 0 0 6px;}
+	#topPan{width:100%; height:96px; position:relative; margin:0 auto; border-bottom: solid;}
+	#topPan img{width:204px; height:57px; display:block; padding:23px 0px 0 175px;}
 	/* Menu Panel */
-	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:9px; margin:0; padding:0;}
+	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:125px; margin:0; padding:0;}
 	#topPan ul li{float:left; width:104px; display:block; text-align:center;}
 	#topPan ul li a{width:104px; height:35px; display:block; font:20px/20px "Trebuchet MS",Arial, Helvetica, sans-serif; color:000000; background:url(images/menu-bg.gif) 0 0 repeat-x #ffffff; text-decoration:none; margin:0; padding:61px 0 0 0; }
 	#topPan ul li a:hover{ width:104px; height:35px; display:block; background:#F78181; color:#000000; text-decoration:none;}
 	#topPan ul li span{width:104px; height:35px; display:block; background:url(images/divider.jpg) 100% 0 no-repeat #F78181; color:#000000; text-decoration:none; padding:61px 0 0 0; line-height:20px;}
 	body {
 				width: 100%;
-				background-color: #ffffff; 
+				background-color: #B8B8B8; 
 				margin:0 auto;
 				padding:0; 
 				-webkit-font-smoothing: antialiased;
@@ -32,7 +32,6 @@
 				  .button a {color: #ffffff; text-decoration: none;}
 				  .borderbottom {border-bottom: 1px solid #f2eeed;}
 				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
-<<<<<<< HEAD
 							
 	
 		/***** MOBILE STYLING RULES *****/
@@ -79,26 +78,7 @@
 		@media only screen and (-webkit-device-pixel-ratio:1.5){
 		}
 	
-=======
-			#backgroundLeft{
-				background-color: #B8B8B8 ;
-  				position: fixed;
-  				top: 0;
-  				bottom: 0;
-  				left: 0;
-  				right: 82%;
- 				z-index: -1;
-			}
-			#backgroundRight{
-				background-color: #B8B8B8 ;
-  				position: fixed;
-  				top: 0;
-  				bottom: 0;
-  				left: 82%;
-  				right: 0;
- 				z-index: -1;
-			}
->>>>>>> FETCH_HEAD
+
 	</style>
 	<title>ISC Corporate Challenge | HOME
 	</title>
@@ -106,16 +86,13 @@
 	<link href="css/eric_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<<<<<<< HEAD
-	
-	
-		
-
 	
 	<table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" width="100%">
 		<tr>
 			<td align="left" class="stack" valign="top" style="" width="100%"> 
-					<div class="container-fluid" id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
+					<div id="backgroundLeft"></div>
+					<div id="backgroundRight"></div>
+					<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
 						<ul>
 							<li><span>Home</span></li>
 							<li><a href="photos.html">Photos</a></li>
@@ -129,30 +106,11 @@
 				</td>
 			</tr>
 		</table>
-=======
-	<div id="backgroundLeft"></div>
-	<div id="backgroundRight"></div>
-	<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
-		<ul>
-			<li><span>Home</span></li>
-			<li><a href="photos.html">Photos</a></li>
-			<li><a href="maps.html">Map</a></li>
-			<li><a href="schedule.html">Schedule</a></li>
-			<li><a href="rules.html">Rules</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="admin.html">Admin</a></li>
-		</ul>
-	</div>
->>>>>>> FETCH_HEAD
-	<div class="container">
-		
+	
 	<div class="div-hipchat">
 	<iframe class="hipchat" src="http://www.hipchat.com/gH3GxNsiX" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
 	</div>
 	</div>
-	
-	
-
 										
 										
 </body>
