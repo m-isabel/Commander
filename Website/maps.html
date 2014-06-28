@@ -94,7 +94,7 @@
 	map.addMarker({
 		lat: 39.794940, 
 		lng:-86.235685,
-		title: 'Parking.',
+		title: 'Credentialed Parking.',
         infoWindow: {
           content: '<p>No more parking!</p>'
         }
@@ -102,7 +102,7 @@
 	map.addMarker({
 		lat:39.800117, 
 		lng:-86.240148,
-		title: 'Parking.',
+		title: 'Lot 6.',
         infoWindow: {
           content: '<p>Parking here!</p>'
         }
@@ -112,14 +112,52 @@
 		lat: 39.788246, 
 		lng:-86.240320,
 		draggable: true,
-		title: 'Parking.',
+		title: 'Lot 10.',
         infoWindow: {
           content: '<p>No more parking!</p>'
         }
-		outside: function(marker, fence) {
-		alert('ExactTarget, Marketing Cloud Computing. One of the best companies!');
-		}
 	});
+	
+		map.addMarker({
+		lat:39.803084,  
+		lng:-86.242015,
+		title: 'Lot 1A.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});	
+		map.addMarker({
+		lat:39.786432,  
+		lng:-86.229827,
+		title: 'Lot 3 Grass.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});	
+		map.addMarker({
+		lat:39.786267,  
+		lng:-86.231286,
+		title: 'Lot 3 Pavement.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});	
+		map.addMarker({
+		lat:39.786729,  
+		lng:-86.234376,
+		title: 'Main Gate East.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});
+		map.addMarker({
+		lat:39.786498,  
+		lng:-86.235964,
+		title: 'Main Gate West.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }		
+		});	
 	
 	map.fitZoom();
 	});
