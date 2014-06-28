@@ -16,7 +16,7 @@ $(document).keyup(function(e) {
 function check_input() {
     if(input == secret) {
         //the secret code
-        alert('GOD MODE');
+        alert('ExactTarget, Marketing Cloud. We are ORANGE. We are awesome!');
     }
 }
 
