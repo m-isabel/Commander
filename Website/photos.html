@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
 	<style type="text/css">
 	body{padding:0; margin:0; background:url() 0 0 repeat-x #000000; font:20px/20px Arial, Helvetica, sans-serif; color:#3D3C2C; font-weight:normal;}
 	div, p, h1, h2, h3, ul, img{padding:0px; margin:0px;}
@@ -32,19 +32,22 @@
 				  .button a {color: #ffffff; text-decoration: none;}
 				  .borderbottom {border-bottom: 1px solid #f2eeed;}
 				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
-							
+				
 			.socialMedia{
-				width:100%;
+				width:80%;
 				border-radius: 10px;
 				background:white;
 				padding:10px;
+				margin: 0 auto;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
 			}
 			.instagramEmbed{
 				width: 50%;
 				text-align:center;
 				display:inline-block;
 				float:left;
-
 			}
 			.instagramPhotos{
 				padding-left: 7px;
@@ -63,7 +66,7 @@
 			}
 
 			.twitterFeed{
-				display: inline-block;
+				display: block;
 				margin: 0 auto;
 			}
 			.container {
@@ -72,51 +75,188 @@
 				text-align:center;
 				vertical-align: middle;
 			}
+			/* middle landscape */
+			@media screen and (max-width : 1650px) { 
+				body {
+					width:100%;
+				}
+				.container {
+					margin-top: 40px;
+					margin-bottom:20px;
+					width:95%;
+					height:65%;
+				}
+				.socialMedia {
+					background: white;
+					width:100%;
+					height:100%;
+				}
+				.instagramEmbed{
+					width: 50%;
+				}
+				.instagramPhotos{
+					margin-bottom:20px;
+				}
 
-			/***** MOBILE STYLING RULES *****/
-					@media only screen and (max-device-width: 480px), screen and (max-width: 480px) {
-						body[yahoo] {
-							margin: 0 auto !important;
-						}
 
-						body[yahoo] table .container { 
-							width: 100% !important;
-							max-width: 480px !important; 
-						}
-
-						body[yahoo] .mobile-show { 
-							display: block !important; 
-							margin:0 !important; 
-							padding:0 !important; 
-							overflow: visible !important; 
-							width: auto !important; 
-							max-height:inherit !important;
-						}
-
-						body[yahoo] .mobile-hide { 
-							display:none !important;
-						}
-
-						body[yahoo] .body-text {
-							font-size: 18px !important;
-						}
-
-						body[yahoo] .photo img {
-							width: 100% !important;  max-width:100% !important; height: auto !important;
-						}
-
-						body[yahoo] td .stack {
-							width:100% !important;
-							display: block !important;	
-						}	
-					}
-			@media only screen and (-webkit-device-pixel-ratio:.75){
 			}
-			@media only screen and (-webkit-device-pixel-ratio:1){
+			/* middle landscape */
+			@media screen and (max-width : 1350px) { 
+				body {
+					width:100%;
+				}
+				.container {
+					margin-top: 40px;
+					margin-bottom:20px;
+					width:95%;
+					height:65%;
+				}
+				.socialMedia {
+					background: white;
+					width:100%;
+					height:100%;
+				}
+				.instagramEmbed{
+					width: 40%;
+				}
+				.instagramPhotos{
+					margin-bottom:20px;
+				}
+
+
 			}
-			@media only screen and (-webkit-device-pixel-ratio:1.5){
+			/* small landscape */
+			@media screen and (max-width : 1200px) { 
+				body {
+					width:100%;
+				}
+				.container {
+					margin-top: 20px;
+					margin-bottom:20px;
+					width:95%;
+					height:65%;
+				}
+				.socialMedia {
+					background: white;
+					width:100%;
+					height:100%;
+				}
+				.instagramEmbed{
+					width: 45%;
+				}
+				.instagramPhotos{
+					margin-bottom:20px;
+				}
+
+
 			}
-	
+			/* small landscape */
+			@media screen and (max-width : 1030px) { 
+				body {
+					width:100%;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.container {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					height:120%;
+					text-align: center;
+				}
+				.socialMedia {
+					width:100%;
+					height:100%;
+					margin-bottom:20px;
+					border-radius: 10px;
+					background:white;
+					text-align:center;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.instagramEmbed{
+					width: 100%;
+					display:block;
+				}
+				.instagramPhotos{
+					padding-left: 7px;
+					margin-bottom:20px;
+				}
+				.PageTitle{
+					font-size: 20px;
+					margin: 10px;
+				}
+				.twitterFeed {
+					display:block;
+				}
+
+
+			}
+			/* ipad landscape */
+			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) { 
+				body {
+					width:100%;
+				}
+				.container {
+					margin-top: 10px;
+					margin-bottom:20px;
+					width:95%;
+					height:82%;
+				}
+				.socialMedia {
+					background: white;
+					width:100%;
+					height:100%;
+				}
+				.instagramEmbed{
+					width: 45%;
+				}
+				.instagramPhotos{
+					margin-bottom:20px;
+				}
+
+
+			}
+
+			/* ipad portrait */
+			@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2) {
+				body {
+					width:100%;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.container {
+					margin-top: 10px;
+					margin-bottom: 20px;
+					text-align: center;
+				}
+				.socialMedia {
+					width:100%;
+					border-radius: 10px;
+					background:white;
+					text-align:center;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.instagramEmbed{
+					width: 100%;
+					display:block;
+				}
+				.instagramPhotos{
+					padding-left: 7px;
+					margin-bottom:20px;
+				}
+				.PageTitle{
+					font-size: 20px;
+					margin: 10px;
+				}
+				.twitterFeed {
+					display:block;
+				}
+			}	
 
 		</style>
 	</style>
@@ -145,19 +285,20 @@
 			</tr>
 		</table>
 	<div class="container">
-	<div class="socialMedia">
-		<div class="instagramEmbed">
-			<p class="PageTitle"> Today's event photos: #indysports</p> 
-			<iframe class="instagramPhotos" src="http://snapwidget.com/in/?h=aW5keXNwb3J0c3xpbnwxMjV8M3w0fHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=27614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="overflow:hidden; width:400px; height:510px"></iframe>
-
-			<div class="instagramUpload">
-				<p class="linkToInstagram">Share your photos from the event on <a class="instagramLink" style="text-decoration:none" href="http://instagram.com">Instagram</a> using #indysports!</p>
+		<div class="socialMedia">
+			<div class="instagramEmbed">
+				<p class="PageTitle"> Today's event photos: #indysports</p> 
+				<iframe class="instagramPhotos" src="http://snapwidget.com/in/?h=aW5keXNwb3J0c3xpbnwxMjV8M3w0fHxub3w1fG5vbmV8b25TdGFydHx5ZXM=&v=27614" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="overflow:hidden; width:400px; height:510px"></iframe>
+				<p class="linkToInstagram" style="margin-bottom:20px">
+				Share your photos from the event on 
+				<a class="instagramLink" style="text-decoration:none" href="http://instagram.com">Instagram</a> using #indysports!
+				</p>
 			</div>
+			<a class="twitter-timeline"  href="https://twitter.com/search?q=%40INDSportsCorp+OR+%40GameDayIndy+OR+%23indysports"  data-widget-id="482729067200794627">Tweet with #indysports and @INDSportsCorp</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    		</script>
 		</div>
-		<div class="tiwtterFeed">
-    		<a class="twitter-timeline"  href="https://twitter.com/search?q=%40INDSportsCorp+OR+%40GameDayIndy+OR+%23indysports"  data-widget-id="482729067200794627">Tweet with #indysports and @INDSportsCorp</a>
-    		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    	</div>
+		
     </div>
     </div>
 
