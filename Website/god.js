@@ -1,4 +1,4 @@
-var secret = "717968"; //god
+var secret = "6984"; //ET
 var input = "";
 var timer;
 var mode = false;
@@ -16,11 +16,11 @@ $(document).keyup(function(e) {
 function check_input() {
     if(input == secret) {
         //the secret code
-        alert('ExactTarget, Marketing Cloud. We are ORANGE. We are awesome!');
+        alert('ExactTarget, Marketing Cloud. We are ORANGE. We are awesome!');	
     }
 }
 
 $(document).ready(function() {
-    setInterval(function() { $('#info').html('Keystroke: ' + input); }, 100);
+    setInterval(function() { $('#info').html(); }, 100);
 });
 
