@@ -1,23 +1,24 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
 	<style type="text/css">
-	body{padding:0; margin:0; background:url() 0 0 repeat-x #000000; font:14px/20px Arial, Helvetica, sans-serif; color:#3D3C2C; font-weight:normal;}
+	body{padding:0; margin:0; background:url() 0 0 repeat-x #000000; font:20px/20px Arial, Helvetica, sans-serif; color:#3D3C2C; font-weight:normal;}
 	div, p, h1, h2, h3, ul, img{padding:0px; margin:0px;}
 	ul{list-style-type:none;}
 	
 	/*border change*/
-	#topPan{width:1000px; height:96px; position:relative; margin:0 auto; padding:0 0 2px; border-bottom: solid;}
-	#topPan img{width:204px; height:57px; display:block; padding:23px 0 0 6px;}
+	#topPan{width:100%; height:96px; position:relative; margin:0 auto; border-bottom: solid #424242;}
+	#topPan img{width:15%; height:57px; display:block; padding:23px 0px 0 175px;}
 	/* Menu Panel */
-	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:9px; margin:0; padding:0;}
+	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:125px; margin:0; padding:0;}
 	#topPan ul li{float:left; width:104px; display:block; text-align:center;}
-	#topPan ul li a{width:104px; height:35px; display:block; font:14px/14px "Trebuchet MS",Arial, Helvetica, sans-serif; color:000000; background:url(images/menu-bg.gif) 0 0 repeat-x #ffffff; text-decoration:none; margin:0; padding:61px 0 0 0; }
+	#topPan ul li a{width:104px; height:35px; display:block; font:20px/20px "Trebuchet MS",Arial, Helvetica, sans-serif; color:000000; background:url(images/menu-bg.gif) 0 0 repeat-x #ffffff; text-decoration:none; margin:0; padding:61px 0 0 0; }
 	#topPan ul li a:hover{ width:104px; height:35px; display:block; background:#F78181; color:#000000; text-decoration:none;}
-	#topPan ul li span{width:104px; height:35px; display:block; background:url(images/divider.jpg) 100% 0 no-repeat #F78181; color:#000000; text-decoration:none; padding:61px 0 0 0; line-height:14px;}
+	#topPan ul li span{width:104px; height:35px; display:block; background:url() 100% 0 no-repeat #F78181; color:#000000; text-decoration:none; padding:61px 0 0 0; line-height:20px;}
 	body {
 				width: 100%;
-				background-color: #ffffff; 
+				background-color: #B8B8B8; 
 				margin:0 auto;
 				padding:0; 
 				-webkit-font-smoothing: antialiased;
@@ -31,36 +32,66 @@
 				  .button a {color: #ffffff; text-decoration: none;}
 				  .borderbottom {border-bottom: 1px solid #f2eeed;}
 				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
-			#backgroundLeft{
-				background-color: #B8B8B8 ;
-  				position: fixed;
-  				top: 0;
-  				bottom: 0;
-  				left: 0;
-  				right: 82%;
- 				z-index: -1;
-			}
-			#backgroundRight{
-				background-color: #B8B8B8 ;
-  				position: fixed;
-  				top: 0;
-  				bottom: 0;
-  				left: 82%;
-  				right: 0;
- 				z-index: -1;
-			}
+							
+							/***** MOBILE STYLING RULES *****/
+									@media only screen and (max-device-width: 480px), screen and (max-width: 480px) {
+										body[yahoo] {
+											margin: 0 auto !important;
+										}
+
+										body[yahoo] table .container { 
+											width: 100% !important;
+											max-width: 480px !important; 
+										}
+
+										body[yahoo] .mobile-show { 
+											display: block !important; 
+											margin:0 !important; 
+											padding:0 !important; 
+											overflow: visible !important; 
+											width: auto !important; 
+											max-height:inherit !important;
+										}
+
+										body[yahoo] .mobile-hide { 
+											display:none !important;
+										}
+
+										body[yahoo] .body-text {
+											font-size: 18px !important;
+										}
+
+										body[yahoo] .photo img {
+											width: 100% !important;  max-width:100% !important; height: auto !important;
+										}
+
+										body[yahoo] td .stack {
+											width:100% !important;
+											display: block !important;	
+										}	
+									}
+							@media only screen and (-webkit-device-pixel-ratio:.75){
+							}
+							@media only screen and (-webkit-device-pixel-ratio:1){
+							}
+							@media only screen and (-webkit-device-pixel-ratio:1.5){
+							}
 	
-	</style>
-	<title>ISC Corporate Challenge | HOME
+
+						</style>
+	
+	<title>ISC Corporate Challenge | RULES
 	</title>
 	<link href="css/eric_style.css" rel="stylesheet" type="text/css">
 	
 </head>
 <body>
-	<div id="backgroundLeft"></div>
-	<div id="backgroundRight"></div>
-	<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
-		<ul>
+	
+	<table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td align="left" valign="top" style="" width="100%">
+					<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
+						<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="photos.html">Photos</a></li>
 			<li><a href="maps.html">Map</a></li>
@@ -68,19 +99,35 @@
 			<li><span>Rules</span></li>
 			<li><a href="contact.html">Contact</a></li>
 			<li><a href="admin.html">Admin</a></li>
-		</ul>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table align="center" cellpadding="0" cellspacing="0" border="0" width="60%">
+			<tr>
+				<td align="left" bgcolor="#ffffff" class="container" valign="top" style="padding: 0 0 0 20px" width="60%">
+	<div class="container" align="center" >
+		<h1><font color="#000000">Rules</h1></font>
 	</div>
-	<div class="container">
-		<h1>Rules</h1>
-		<hr />
-		
+</td>
 		<br />
-		<div id="pdf-view">
-			<iframe id="rules" src="data/rules.pdf" width="100%" height="100%"></iframe>
-		</div>
-	</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	
+		<table align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td align="left" class="container" valign="top" style="" width="100">
+						<div align="center" style="">
+								<img src="images/rules/1.jpg" width="60%">
+								<img src="images/rules/2.jpg" width="60%">
+								<img src="images/rules/3.jpg" width="60%">
+								<img src="images/rules/4.jpg" width="60%">
+								<img src="images/rules/5.jpg" width="60%">
+								<img src="images/rules/6.jpg" width="60%">
+								<img src="images/rules/7.jpg" width="60%">
+							</div>
+						</td>
+					</tr>
+		</table>
 	
 
 										
