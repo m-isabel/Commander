@@ -13,6 +13,26 @@
     padding-top:70px;
     height:100%;
   }
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    background-color: #ccc;
+    left:0;
+    padding:15px;
+  }
   </style>
 </head>
 
@@ -36,7 +56,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">      
         
         <!--Include your brand here-->
-        <a class="navbar-brand" href="#">Team Camptain</a>
+        <a class="navbar-brand" href="#">Team Captain</a>
         <div class="navbar-header pull-right">
           <a id="nav-expander" class="nav-expander fixed">
             MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
@@ -53,13 +73,11 @@
         <div class="span12">
           <iframe src="http://www.hipchat.com/gH3GxNsiX" height="600px" width="100%" allowTransparency="true" frameborder="0" scrolling="no"></iframe></p>
         </div>
-      <hr>
-      <footer>
-        <p>&copy; <b>A+A 2014</b></p>
-      </footer>
     </div> <!-- /container -->
     
-    
+    <div class="footer">
+        <p>&copy; <b>A+A 2014</b></p>
+    </div>
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

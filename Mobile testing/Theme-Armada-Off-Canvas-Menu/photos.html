@@ -347,7 +347,27 @@
             border:1px solid white;
             margin-bottom:20px;
           }
-        } 
+        }
+        /* Sticky footer styles
+        -------------------------------------------------- */
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+        body {
+          /* Margin bottom by footer height */
+          margin-bottom: 60px;
+        }
+        .footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          /* Set the fixed height of the footer here */
+          height: 50px;
+          background-color: #ccc;
+          left:0;
+          padding:15px;
+        }
   </style>
 </head>
 
@@ -362,16 +382,16 @@
           <li><a href="photos.html">Photos <span class="icon"></span></a></li>
           <li><a href="maps.html">Map <span class="icon"></span></a></li>
           <li><a href="schedule.html">Schedule <span class="icon"></span></a></li>
-          <li><a href="rules.html">Rules </a> <span class="icon"></span></a></li>
-          <li><a href="contact.html">Contact </a> <span class="icon"></span></a></li>
-          <li><a href="rules.html">Admin </a> <span class="icon"></span></a></li>
+          <li><a href="rules.html">Rules <span class="icon"></span></a></li>
+          <li><a href="contact.html">Contact <span class="icon"></span></a></li>
+          <li><a href="rules.html">Admin <span class="icon"></span></a></li>
         </ul>
       </nav>
           
     <div class="navbar navbar-inverse navbar-fixed-top">      
         
         <!--Include your brand here-->
-        <a class="navbar-brand" href="#">Team Camptain</a>
+        <a class="navbar-brand" href="#">Team Captain</a>
         <div class="navbar-header pull-right">
           <a id="nav-expander" class="nav-expander fixed">
             MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
@@ -395,14 +415,14 @@
           <div class="twitterFeed">
           <a class="twitter-timeline"  href="https://twitter.com/search?q=%40INDSportsCorp+OR+%40GameDayIndy+OR+%23indysports"  data-widget-id="482729067200794627">Tweet with #indysports and @INDSportsCorp</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                
           </script>
         </div> 
-      </div>
-        
-    </div>
+        </div>
+      </div>     
+      <div class="footer">
+        <p>&copy; <b>A+A 2014</b></p>
+      </div>  
 
-  </div>
 
 
       

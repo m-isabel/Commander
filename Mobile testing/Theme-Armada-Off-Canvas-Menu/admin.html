@@ -13,6 +13,17 @@
     padding-top:70px;
     height:100%;
   }
+  .warning {
+    text-align:center;
+    font-size:3.5em;
+    padding-top: 150px;
+    padding-bottom:150px;
+    height:600px;
+    display:none;
+  }
+  .content {
+    display:none;
+  }
   /* Sticky footer styles
   -------------------------------------------------- */
   html {
@@ -40,7 +51,6 @@
 
     <nav>
         <ul class="list-unstyled main-menu">
-          
           <!--Include your navigation here-->
           <li class="text-left"><a href="index.html" id="nav-close">X</a></li>
           <li><a href="index.html">Home <span class="icon"></span></a></li>
@@ -50,6 +60,7 @@
           <li><a href="rules.html">Rules <span class="icon"></span></a></li>
           <li><a href="contact.html">Contact <span class="icon"></span></a></li>
           <li><a href="admin.html">Admin <span class="icon"></span></a></li>
+          
         </ul>
       </nav>
           
@@ -71,16 +82,15 @@
       <!-- Example row of columns -->
       <div class="row" >
         <div class="span12">
-            <div style="text-align:center">
-              <h1>Rules</h1>
-              <img src="images/rules/1.jpg" width="60%">
-              <img src="images/rules/2.jpg" width="60%">
-              <img src="images/rules/3.jpg" width="60%">
-              <img src="images/rules/4.jpg" width="60%">
-              <img src="images/rules/5.jpg" width="60%">
-              <img src="images/rules/6.jpg" width="60%">
-              <img src="images/rules/7.jpg" width="60%">
-            </div>
+          <div class="warning">
+            <strong>Wrong password! 
+              <br>You are not allowed to see this page.
+              <br>Please click <a href="">HERE</a> to refresh
+            </strong>
+          </div>
+          <div class="content">
+            <iframe src="http://www.hipchat.com/gH3GxNsiX" height="600px" width="100%" allowTransparency="true" frameborder="0" scrolling="no"></iframe></p>
+          </div>
         </div>
     </div> <!-- /container -->
     <div class="footer">
@@ -96,7 +106,20 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="js/jquery.navgoco.js"></script>
     <script src="js/main.js"></script>
-    
+    <script>
+      window.onload = function(){
+        var pwd = prompt("Please enter PIN");
+        if(pwd != '1234')
+        {
+          $('.warning').fadeIn();
+        }
+        else
+        {
+          $('.content').fadeIn();
+
+        }
+      }
+    </script>
     <script>
     $(document).ready(function(){												
        
