@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Off Canvas Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+  body {
+    padding-top:70px;
+    height:100%;
+  }
+  </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="list-unstyled main-menu">
+          <!--Include your navigation here-->
+          <li class="text-left"><a href="index.html" id="nav-close">X</a></li>
+          <li><a href="index.html">Home <span class="icon"></span></a></li>
+          <li><a href="photos.html">Photos <span class="icon"></span></a></li>
+          <li><a href="maps.html">Map <span class="icon"></span></a></li>
+          <li><a href="schedule.html">Schedule <span class="icon"></span></a></li>
+          <li><a href="rules.html">Rules <span class="icon"></span></a></li>
+          <li><a href="contact.html">Contact <span class="icon"></span></a></li>
+          <li><a href="admin.html">Admin <span class="icon"></span></a></li>
+          
+        </ul>
+      </nav>
+          
+    <div class="navbar navbar-inverse navbar-fixed-top">      
+        
+        <!--Include your brand here-->
+        <a class="navbar-brand" href="#">Team Camptain</a>
+        <div class="navbar-header pull-right">
+          <a id="nav-expander" class="nav-expander fixed">
+            MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
+          </a>
+        </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+
+    <div class="container" >
+      <!-- Example row of columns -->
+      <div class="row" >
+        <div class="span12">
+          <iframe src="http://www.hipchat.com/gH3GxNsiX" height="600px" width="100%" allowTransparency="true" frameborder="0" scrolling="no"></iframe></p>
+        </div>
+      <hr>
+      <footer>
+        <p>&copy; <b>A+A 2014</b></p>
+      </footer>
+    </div> <!-- /container -->
+    
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.navgoco.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+    $(document).ready(function(){												
+       
+       //Navigation Menu Slider
+        $('#nav-expander').on('click',function(e){
+      		e.preventDefault();
+      		$('body').toggleClass('nav-expanded');
+      	});
+      	$('#nav-close').on('click',function(e){
+      		e.preventDefault();
+      		$('body').removeClass('nav-expanded');
+      	});
+      	
+      	
+      	// Initialize navgoco with default options
+        $(".main-menu").navgoco({
+            caret: '<span class="caret"></span>',
+            accordion: false,
+            openClass: 'open',
+            save: true,
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+  
+        	
+      });
+      </script>
+
+
+   
+    </body>
+</html>
