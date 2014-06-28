@@ -111,10 +111,14 @@
 	map.addMarker({
 		lat: 39.788246, 
 		lng:-86.240320,
+		draggable: true,
 		title: 'Parking.',
         infoWindow: {
           content: '<p>No more parking!</p>'
         }
+		outside: function(marker, fence) {
+		alert('ExactTarget, Marketing Cloud Computing. One of the best companies!');
+		}
 	});
 	
 	map.fitZoom();
