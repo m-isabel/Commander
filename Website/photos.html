@@ -1,23 +1,24 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
 	<style type="text/css">
-	body{padding:0; margin:0; background:url() 0 0 repeat-x #000000; font:14px/20px Arial, Helvetica, sans-serif; color:#3D3C2C; font-weight:normal;}
+	body{padding:0; margin:0; background:url() 0 0 repeat-x #000000; font:20px/20px Arial, Helvetica, sans-serif; color:#3D3C2C; font-weight:normal;}
 	div, p, h1, h2, h3, ul, img{padding:0px; margin:0px;}
 	ul{list-style-type:none;}
 	
 	/*border change*/
-	#topPan{width:1000px; height:96px; position:relative; margin:0 auto; padding:0 0 2px; border-bottom: solid;}
-	#topPan img{width:204px; height:57px; display:block; padding:23px 0 0 6px;}
+	#topPan{width:100%; height:96px; position:relative; margin:0 auto; border-bottom: solid #424242;}
+	#topPan img{width:15%; height:57px; display:block; padding:23px 0px 0 175px;}
 	/* Menu Panel */
-	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:9px; margin:0; padding:0;}
+	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:125px; margin:0; padding:0;}
 	#topPan ul li{float:left; width:104px; display:block; text-align:center;}
-	#topPan ul li a{width:104px; height:35px; display:block; font:14px/14px "Trebuchet MS",Arial, Helvetica, sans-serif; color:000000; background:url(images/menu-bg.gif) 0 0 repeat-x #ffffff; text-decoration:none; margin:0; padding:61px 0 0 0; }
+	#topPan ul li a{width:104px; height:35px; display:block; font:20px/20px "Trebuchet MS",Arial, Helvetica, sans-serif; color:000000; background:url(images/menu-bg.gif) 0 0 repeat-x #ffffff; text-decoration:none; margin:0; padding:61px 0 0 0; }
 	#topPan ul li a:hover{ width:104px; height:35px; display:block; background:#F78181; color:#000000; text-decoration:none;}
-	#topPan ul li span{width:104px; height:35px; display:block; background:url(images/divider.jpg) 100% 0 no-repeat #F78181; color:#000000; text-decoration:none; padding:61px 0 0 0; line-height:14px;}
+	#topPan ul li span{width:104px; height:35px; display:block; background:url() 100% 0 no-repeat #F78181; color:#000000; text-decoration:none; padding:61px 0 0 0; line-height:20px;}
 	body {
 				width: 100%;
-				background-color: #ffffff; 
+				background-color: #B8B8B8; 
 				margin:0 auto;
 				padding:0; 
 				-webkit-font-smoothing: antialiased;
@@ -31,6 +32,7 @@
 				  .button a {color: #ffffff; text-decoration: none;}
 				  .borderbottom {border-bottom: 1px solid #f2eeed;}
 				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
+							
 			.socialMedia{
 				width: 930px;
 				border-color: black;
@@ -89,7 +91,52 @@
   				right: 0;
  				z-index: -1;
 			}
+			/***** MOBILE STYLING RULES *****/
+					@media only screen and (max-device-width: 480px), screen and (max-width: 480px) {
+						body[yahoo] {
+							margin: 0 auto !important;
+						}
 
+						body[yahoo] table .container { 
+							width: 100% !important;
+							max-width: 480px !important; 
+						}
+
+						body[yahoo] .mobile-show { 
+							display: block !important; 
+							margin:0 !important; 
+							padding:0 !important; 
+							overflow: visible !important; 
+							width: auto !important; 
+							max-height:inherit !important;
+						}
+
+						body[yahoo] .mobile-hide { 
+							display:none !important;
+						}
+
+						body[yahoo] .body-text {
+							font-size: 18px !important;
+						}
+
+						body[yahoo] .photo img {
+							width: 100% !important;  max-width:100% !important; height: auto !important;
+						}
+
+						body[yahoo] td .stack {
+							width:100% !important;
+							display: block !important;	
+						}	
+					}
+			@media only screen and (-webkit-device-pixel-ratio:.75){
+			}
+			@media only screen and (-webkit-device-pixel-ratio:1){
+			}
+			@media only screen and (-webkit-device-pixel-ratio:1.5){
+			}
+	
+
+		</style>
 	</style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<title>ISC Corporate Challenge | HOME
