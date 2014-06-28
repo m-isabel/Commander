@@ -60,7 +60,7 @@ body hr {
 }
 .div-hipchat {
 	margin:0 auto;
-	margin-top:20px;
+	margin-top:0px;
 	text-align:center;
 	z-index: -1;
 }
