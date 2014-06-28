@@ -1,39 +1,22 @@
 
+
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script src="gmaps.js"></script>
-	<style type="text/css">
-	body{padding:0; margin:0; background:url() 0 0 repeat-x #000000; font:14px/20px Arial, Helvetica, sans-serif; color:#3D3C2C; font-weight:normal;}
-	div, p, h1, h2, h3, ul, img{padding:0px; margin:0px;}
-	ul{list-style-type:none;}
-	
-	#topPan{width:1000px; height:96px; position:relative; margin:0 auto; padding:0;}
-	#topPan img{width:204px; height:57px; display:block; padding:23px 0 0 6px;}
-	/* Menu Panel */
-	#topPan ul{width:750px; height:96px; display:block; position:absolute; top:0px; right:9px; margin:0; padding:0;}
-	#topPan ul li{float:left; width:104px; display:block; text-align:center;}
-	#topPan ul li a{width:104px; height:35px; display:block; font:14px/14px "Trebuchet MS",Arial, Helvetica, sans-serif; color:000000; background:url(images/menu-bg.gif) 0 0 repeat-x #ffffff; text-decoration:none; margin:0; padding:61px 0 0 0; }
-	#topPan ul li a:hover{ width:104px; height:35px; display:block; background:#F78181; color:#000000; text-decoration:none;}
-	#topPan ul li span{width:104px; height:35px; display:block; background:url(images/divider.jpg) 100% 0 no-repeat #F78181; color:#000000; text-decoration:none; padding:61px 0 0 0; line-height:14px;}
-	body {
-				width: 100%;
-				background-color: #ffffff; 
-				margin:0 auto;
-				padding:0; 
-				-webkit-font-smoothing: antialiased;
-				font-family:"Arial", Helvetica, sans-serif !important;
-			}
-			.header {padding: 40px 30px 20px 30px;}
-				  .innerpadding {padding: 30px 30px 30px 30px;}
-				  .menu {text-align:center; padding: 5px 5px 5px 5px;}
-
-				  .button {text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;}
-				  .button a {color: #ffffff; text-decoration: none;}
-				  .borderbottom {border-bottom: 1px solid #f2eeed;}
-				  		.h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
+	<script src="et.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<style>
+	  body {
+	    padding-top:70px;
+	  }
+	  #basic-map {
+	  	margin: 0 auto;
+	  	height: 500px;
+	  	width: 700px;
+	  }
 	</style>
 	<script>
 	$(document).ready(function(){
@@ -47,54 +30,97 @@
 		},
 		panControl : false,
 	  });
-	  /*
+	 
 	GMaps.geolocate({
-    success: function(position){
-      map.setCenter(position.coords.latitude, position.coords.longitude);
+		success: function(position){
+		  map.setCenter(position.coords.latitude, position.coords.longitude);
 
-      map.addMarker({
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-        title: 'You are here.',
-        infoWindow: {
-          content: '<p>You are here!</p>'
-        }
-      });
-    },
-	
-    error: function(error){
-      alert('Geolocation failed: '+error.message);
-    },
-    not_supported: function(){
-      alert("Your browser does not support geolocation");
-    }
-	
-  });*/
+		  map.addMarker({
+			lat: position.coords.latitude,
+			lng: position.coords.longitude,
+			title: 'You are here.',
+			infoWindow: {
+			  content: '<p>You are here!</p>'
+			}
+		  });
+		},
+		/*
+		error: function(error){
+		  alert('Geolocation failed: '+error.message);
+		},
+		not_supported: function(){
+		  alert("Your browser does not support geolocation");
+		}
+		*/
+	});
   
 	map.addMarker({
 		lat: 39.794940, 
 		lng:-86.235685,
-		title: 'Parking.',
+		title: 'Credentialed Parking.',
         infoWindow: {
           content: '<p>No more parking!</p>'
         }
 	});
-		map.addMarker({
+	map.addMarker({
 		lat:39.800117, 
 		lng:-86.240148,
-		title: 'Parking.',
+		title: 'Lot 6.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});
+	
+	map.addMarker({
+		lat: 39.788246, 
+		lng:-86.240320,
+		draggable: true,
+		title: 'Lot 10.',
+        infoWindow: {
+          content: '<p>No more parking!</p>'
+        }
+	});
+	
+		map.addMarker({
+		lat:39.803084,  
+		lng:-86.242015,
+		title: 'Lot 1A.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});	
+		map.addMarker({
+		lat:39.786432,  
+		lng:-86.229827,
+		title: 'Lot 3 Grass.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});	
+		map.addMarker({
+		lat:39.786267,  
+		lng:-86.231286,
+		title: 'Lot 3 Pavement.',
+        infoWindow: {
+          content: '<p>Parking here!</p>'
+        }
+	});	
+		map.addMarker({
+		lat:39.786729,  
+		lng:-86.234376,
+		title: 'Main Gate East.',
         infoWindow: {
           content: '<p>Parking here!</p>'
         }
 	});
 		map.addMarker({
-		lat: 39.788246, 
-		lng:-86.240320,
-		title: 'Parking.',
+		lat:39.786498,  
+		lng:-86.235964,
+		title: 'Main Gate West.',
         infoWindow: {
-          content: '<p>No more parking!</p>'
-        }
-	});
+          content: '<p>Parking here!</p>'
+        }		
+		});	
 	
 	map.fitZoom();
 	});
@@ -104,34 +130,26 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div id="topPan"><a href="index.html"><img src="images/home.jpg" title="ISC Corporate Challenge | HOME" alt="ISC" width="204" height="57" border="0"/></a>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="photos.html">Photos</a></li>
-			<li><span>Map</span></li>
-			<li><a href="schedule.html">Schedule</a></li>
-			<li><a href="rules.html">Rules</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="admin.html">Admin</a></li>
-		</ul>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container">
+	      <div class="navbar-header">
+	        <a class="navbar-brand" href="index.html" style="text-decoration:none"><font color="#D5160C" style="font-weight:bold">Commander</font></a>
+	      </div>
+	      <div class="navbar-collapse collapse">
+	        <ul class="nav navbar-nav">
+	               <li><a href="photos.html">Photos</a></li>
+	               <li><a href="maps.html">Map</a></li>
+	               <li><a href="schedule.html">Schedule</a></li>
+	               <li><a href="rules.html">Rules</a></li>
+	               <li><a href="contact.html">Contact</a></li>
+	               <li><a href="admin.html">Admin</a></li>
+	        </ul>
+	      </div><!--/.nav-collapse -->
+	    </div>
 	</div>
-	
-	<iframe style='height:1px;position:absolute;top:-4000px;left:-4000px;' src='' ></iframe>
- 
-            <div class="clear"></div>
-        </div>
-        
-        <!-- #col-3 -->
-        <div class="clear"></div>
+	<div class="container">
+	<div id="basic_map" style="margin:0 auto; height: 40%; width: 50%;"></div>
     </div>
-    </div>
-
-	
-	
-<i
-	<div align="center" id="basic_map" style="height: 300px; width: 100%">
-	</div>
-</table>
 
 </body>
 </html>
